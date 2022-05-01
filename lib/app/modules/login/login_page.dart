@@ -58,6 +58,8 @@ class _LoginPageState extends State<LoginPage> {
                             padding: EdgeInsets.symmetric(
                                 horizontal: 8, vertical: 16),
                             child: TextField(
+                              obscureText: true,
+                              autocorrect: false,
                               decoration: InputDecoration(
                                 border: OutlineInputBorder(),
                                 label: Text('Password'),
@@ -95,7 +97,7 @@ class _LoginPageState extends State<LoginPage> {
                             padding: const EdgeInsets.only(left: 8),
                             child: GestureDetector(
                               onTap: () {
-                                Modular.to.pushNamed('/register');
+                                Modular.to.pushNamed('/register/');
                               },
                               child: Text(
                                 'Signup',

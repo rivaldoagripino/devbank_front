@@ -42,6 +42,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           padding:
                               EdgeInsets.symmetric(horizontal: 8, vertical: 16),
                           child: TextField(
+                            keyboardType: TextInputType.emailAddress,
                             decoration: InputDecoration(
                               border: OutlineInputBorder(),
                               label: Text('Email'),
@@ -98,7 +99,8 @@ class _RegisterPageState extends State<RegisterPage> {
                           padding:
                               EdgeInsets.symmetric(horizontal: 8, vertical: 16),
                           child: TextField(
-                            keyboardType: TextInputType.visiblePassword,
+                            obscureText: true,
+                            autocorrect: false,
                             decoration: InputDecoration(
                               border: OutlineInputBorder(),
                               label: Text('Password'),

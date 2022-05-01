@@ -14,7 +14,7 @@ class LoginController extends ChangeNotifier implements Disposable {
     try {
       loginModelResponse =
           await _loginRepository.postLoginRoute(loginModelRequest);
-      AsukaSnackbar.success("Login efetuado").show();
+      Modular.to.pushNamed('/home/');
     } catch (e) {
       AsukaSnackbar.warning("Usuário não encontrado").show();
     }
