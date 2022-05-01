@@ -4,8 +4,6 @@ import 'package:devbank_front/app/modules/login/repositories/login_repository.da
 import 'package:flutter_modular/flutter_modular.dart';
 
 class LoginModule extends Module {
-  static const ROUTE = '/';
-
   @override
   List<Bind> get binds => [
         Bind((i) => LoginController()),
@@ -14,6 +12,6 @@ class LoginModule extends Module {
 
   @override
   List<ModularRoute> get routes => [
-        ChildRoute(ROUTE, child: (_, args) => const LoginPage()),
+        ChildRoute('/', child: (_, args) => const LoginPage()),
       ];
 }

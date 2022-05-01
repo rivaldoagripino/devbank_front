@@ -1,5 +1,4 @@
 import 'package:asuka/asuka.dart' as asuka;
-import 'package:devbank_front/app/modules/login/login_module.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:sizer/sizer.dart';
@@ -19,7 +18,6 @@ class AppWidget extends StatelessWidget {
         ),
         builder: asuka.builder,
         navigatorObservers: [asuka.asukaHeroController],
-        initialRoute: LoginModule.ROUTE,
       ).modular();
     });
   }

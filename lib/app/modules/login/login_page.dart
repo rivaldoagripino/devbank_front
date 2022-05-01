@@ -1,5 +1,6 @@
 import 'package:devbank_front/app/modules/login/controllers/login_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 import 'package:sizer/sizer.dart';
 
 class LoginPage extends StatefulWidget {
@@ -11,6 +12,7 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   LoginController loginController = LoginController();
+
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
@@ -76,7 +78,6 @@ class _LoginPageState extends State<LoginPage> {
                         onPressed: () {
                           loginController
                               .login(loginController.loginModelRequest);
-                          print(loginController.loginModelResponse);
                         },
                         child: Text('Login'),
                       ),
@@ -93,7 +94,9 @@ class _LoginPageState extends State<LoginPage> {
                           Padding(
                             padding: const EdgeInsets.only(left: 8),
                             child: GestureDetector(
-                              onTap: () {},
+                              onTap: () {
+                                Modular.to.pushNamed('/register');
+                              },
                               child: Text(
                                 'Signup',
                                 style: TextStyle(
