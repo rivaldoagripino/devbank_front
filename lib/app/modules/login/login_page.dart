@@ -1,3 +1,4 @@
+import 'package:devbank_front/app/modules/login/controllers/login_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
@@ -9,6 +10,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  LoginController loginController = LoginController();
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
@@ -44,6 +46,10 @@ class _LoginPageState extends State<LoginPage> {
                                 border: OutlineInputBorder(),
                                 label: Text('Username'),
                               ),
+                              onChanged: (value) {
+                                loginController.loginModelRequest.username =
+                                    value;
+                              },
                             ),
                           ),
                           Padding(
@@ -54,6 +60,10 @@ class _LoginPageState extends State<LoginPage> {
                                 border: OutlineInputBorder(),
                                 label: Text('Password'),
                               ),
+                              onChanged: (value) {
+                                loginController.loginModelRequest.password =
+                                    value;
+                              },
                             ),
                           ),
                         ],
@@ -64,7 +74,9 @@ class _LoginPageState extends State<LoginPage> {
                       child: ElevatedButton(
                         style: ButtonStyle(),
                         onPressed: () {
-                          print("teste");
+                          loginController
+                              .login(loginController.loginModelRequest);
+                          print(loginController.loginModelResponse);
                         },
                         child: Text('Login'),
                       ),

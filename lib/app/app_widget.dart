@@ -1,3 +1,4 @@
+import 'package:asuka/asuka.dart' as asuka;
 import 'package:devbank_front/app/modules/login/login_module.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -16,6 +17,8 @@ class AppWidget extends StatelessWidget {
           primaryColorLight: const Color(0xFFDFE6E5),
           primaryColorDark: const Color.fromARGB(255, 3, 54, 45),
         ),
+        builder: asuka.builder,
+        navigatorObservers: [asuka.asukaHeroController],
         initialRoute: LoginModule.ROUTE,
       ).modular();
     });
