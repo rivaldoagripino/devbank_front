@@ -1,7 +1,7 @@
-import 'package:devbank_front/src/modules/Auth/auth_module.dart';
+import 'package:devbank_front/app/modules/login/login_module.dart';
 import 'package:flutter/material.dart';
-import 'package:sizer/sizer.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:sizer/sizer.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({Key? key}) : super(key: key);
@@ -16,7 +16,7 @@ class AppWidget extends StatelessWidget {
           primaryColorLight: const Color(0xFFDFE6E5),
           primaryColorDark: const Color.fromARGB(255, 3, 54, 45),
         ),
-        initialRoute: AuthModule.ROUTE,
+        initialRoute: LoginModule.ROUTE,
       ).modular();
     });
   }
