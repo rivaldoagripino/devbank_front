@@ -38,7 +38,7 @@ class CustomCardWidget extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("TRANSACTION ID"),
+                  Text("DESCRIPTION"),
                   Text(user!),
                 ],
               ),
