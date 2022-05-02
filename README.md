@@ -28,3 +28,7 @@ Para começarmos, certifique-se de seguir os passos a seguir:
 * Clonagem do repositório.
 * Rodar o projeto Backend: https://github.com/rivaldoagripino/devbank
 * Executar projeto em debug. OBS: Recomendado utilizar Android Studio
+
+<img src="https://i.ibb.co/Z8bTcYk/Captura-de-tela-de-2022-05-01-23-37-40.png" alt="exemplo imagem">
+<img src="https://i.ibb.co/XsQCtVP/Captura-de-tela-de-2022-05-01-23-35-34.png" alt="exemplo imagem">
+<img src="https://i.ibb.co/CBk3w90/Captura-de-tela-de-2022-05-01-23-35-17.png" alt="exemplo imagem">
