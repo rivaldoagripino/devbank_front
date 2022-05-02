@@ -15,7 +15,8 @@ class RegisterController extends ChangeNotifier implements Disposable {
     try {
       registerModelResponse =
           await _registerRepository.postRegisterRoute(registerModelRequest);
-      Modular.to.pushNamed('/home/');
+      Modular.to.pushNamed('/');
+      AsukaSnackbar.success("Usuário cadastrado").show();
     } catch (e) {
       AsukaSnackbar.warning("Dados inválidos").show();
     }

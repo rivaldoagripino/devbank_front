@@ -1,16 +1,30 @@
-# devbank_front
+<img src="https://acontecendoaqui.com.br/wp-content/uploads/2019/05/grupo_nexxera.jpg" alt="exemplo imagem">
 
-A new Flutter project.
+# Desafio - API (FRONTEND)
 
-## Getting Started
+> Projeto criado a fins de teste de conhecimento.
 
-This project is a starting point for a Flutter application.
+## Listagem de todos os desafios passados e seus respectivos status:
 
-A few resources to get you started if this is your first Flutter project:
+#### Criar uma API que seja possível criar e utilizar uma conta virtual tendo as seguintes funcionalidades:
+- [x] Criar conta virtual
+- [x] Realizar débito
+- [x] Realizar crédito
+- [x] Exibir extrato
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+#### Critérios a serem seguidos:
+- [x] O sistema pode comportar ao menos 1 conta
+- [x] Cada débito ou crédito deve ter uma descrição que é exibida no extrato
+- [x] A função extrato deve exibir o saldo inicial e final do período, listando as transações do período
+- [x] Deve ser possível filtrar extrato apenas por crédito ou por débito
+- [x] Deve ser disponibilizada API rest para utilizar o sistema
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### Requisitos técnicos:
+- [x] Criação de modelo de telas em Flutter
+
+## 💻 Inicializando o Projeto:
+
+Para começarmos, certifique-se de seguir os passos a seguir:
+* Clonagem do repositório.
+* Rodar o projeto Backend: https://github.com/rivaldoagripino/devbank
+* Executar projeto em debug. OBS: Recomendado utilizar Android Studio
